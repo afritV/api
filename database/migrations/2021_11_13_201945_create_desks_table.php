@@ -15,6 +15,7 @@ class CreateDesksTable extends Migration
     {
         Schema::create('desks', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
             $table->timestamps();
         });
     }

@@ -22,7 +22,8 @@ class TaskFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->word,
+            'card_id' => $this->faker->unique->numberBetween(1,30)
         ];
     }
 }
