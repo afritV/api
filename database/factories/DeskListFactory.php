@@ -22,7 +22,7 @@ class DeskListFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->word,
+            'name' => $this->faker->firstName,
             'desk_id' => $this->faker->unique->numberBetween(1,30)
 
         ];

@@ -21,6 +21,6 @@ class DatabaseSeeder extends Seeder
 //        Desk::factory(30)->create();
 //        DeskList::factory(30)->create();
 //        Card::factory(30)->create();
-        Task::factory(30)->create();
+//        Task::factory(30)->create();
     }
 }

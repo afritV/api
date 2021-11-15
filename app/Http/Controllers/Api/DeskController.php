@@ -62,11 +62,10 @@ class DeskController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return boolean
      */
     public function destroy(Desk $desk)
     {
-        $desk->delete();
-        return response(null,Response::HTTP_NO_CONTENT);
+        return $desk->delete();
     }
 }
